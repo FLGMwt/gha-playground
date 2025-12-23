@@ -7,6 +7,8 @@ jobs:
   test-scratch:
     runs-on: ubuntu-latest
     steps:
+    - name: fail earlier (fail whole job)
+      run: exit 1
     - name: This might fail, but I don't want it to mark the workflow bad
       id: badstep
       continue-on-error: true
