@@ -1,0 +1,15 @@
+name: Test (scratch)
+
+on:
+  push:
+
+jobs:
+  test-scratch:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out Git repository
+      continue-on-error: true
+      run: exit 1
+    - name: How is `failure()` treated?
+      if: failure()
+      run: echo I'm running despite continue (I think this won't work)
