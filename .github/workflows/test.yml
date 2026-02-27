@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: fail earlier (fail whole job)
       run: exit 1
-    - name: This might fail, but I don't want it to mark the workflow bad
+    - name: This might fail, but I don't want it to mark the workflow bad // NOTE ±±8WQHW77W±± I have an opinion about thie line 
       id: badstep
       continue-on-error: true
       run: exit 1

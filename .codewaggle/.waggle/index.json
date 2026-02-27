@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "entries": {
+    "8WQHW77W": {
+      "permalink": "https://github.com/FLGMwt/gha-playground/blob/7de1c37aabb2d0b306251482bdc17f4c59279491/.github/workflows/test.yml#L12",
+      "relativeFilePath": ".github/workflows/test.yml",
+      "lineStart": 12,
+      "lineEnd": 12,
+      "codeSnippet": "- name: This might fail, but I don't want it to mark the workflow bad",
+      "comment": "I have an opinion about thie line ",
+      "author": "FLGMwt",
+      "tags": [],
+      "mentions": [],
+      "id": "8WQHW77W",
+      "createdAt": "2026-02-27T00:18:44.650Z"
+    }
+  }
+}
