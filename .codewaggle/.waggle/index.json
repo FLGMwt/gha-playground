@@ -13,6 +13,24 @@
       "mentions": [],
       "id": "8WQHW77W",
       "createdAt": "2026-02-27T00:18:44.650Z"
+    },
+    "8GXIMOVN": {
+      "permalink": "https://github.com/FLGMwt/gha-playground/blob/46bac6a05ba375847896f3e32d8ea9a93a8c0910/.github/workflows/test.yml#L7-L11",
+      "relativeFilePath": ".github/workflows/test.yml",
+      "lineStart": 7,
+      "lineEnd": 11,
+      "codeSnippet": "test-scratch:\n    runs-on: ubuntu-latest\n    steps:\n    - name: fail earlier (fail whole job)\n      run: exit 1",
+      "comment": "@.github/workflows/test.yml",
+      "author": "FLGMwt",
+      "tags": [],
+      "mentions": [
+        {
+          "type": "file",
+          "target": ".github/workflows/test.yml"
+        }
+      ],
+      "id": "8GXIMOVN",
+      "createdAt": "2026-02-27T00:34:07.055Z"
     }
   }
 }

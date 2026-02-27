@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: fail earlier (fail whole job)
-      run: exit 1
+      run: exit 1 // NOTE ±±8GXIMOVN±± @.github/workflows/test.yml
     - name: This might fail, but I don't want it to mark the workflow bad // NOTE ±±8WQHW77W±± I have an opinion about thie line 
       id: badstep
       continue-on-error: true
