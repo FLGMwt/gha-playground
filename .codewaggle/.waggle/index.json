@@ -31,6 +31,21 @@
       ],
       "id": "8GXIMOVN",
       "createdAt": "2026-02-27T00:34:07.055Z"
+    },
+    "M1Z3Y1EO": {
+      "permalink": "https://github.com/FLGMwt/gha-playground/blob/9704ad5ff45e2b1ff5a6d9295ca1fc7cf5cde721/.github/workflows/test.yml#L15-L18",
+      "relativeFilePath": ".github/workflows/test.yml",
+      "lineStart": 15,
+      "lineEnd": 18,
+      "codeSnippet": "\n    - name: I want this to run even if step 1 fails\n      if: ${{ steps.badstep.outcome == 'failure' }}\n      run: echo \"",
+      "comment": "#hrmmm",
+      "author": "FLGMwt",
+      "tags": [
+        "hrmmm"
+      ],
+      "mentions": [],
+      "id": "M1Z3Y1EO",
+      "createdAt": "2026-02-27T00:34:24.221Z"
     }
   }
 }

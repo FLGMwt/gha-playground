@@ -15,4 +15,4 @@ jobs:
       run: exit 1
     - name: I want this to run even if step 1 fails
       if: ${{ steps.badstep.outcome == 'failure' }}
-      run: echo "I'm running despite continue (I think this won't work)"
+      run: echo "I'm running despite continue (I think this won't work)" // NOTE ±±M1Z3Y1EO±± #hrmmm
