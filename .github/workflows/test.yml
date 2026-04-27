@@ -15,4 +15,4 @@ jobs:
     needs: test
     if: ${{ success() || failure() }}
     steps:
-      - run: echo suppose I'm notifying slack
+      - run: echo "suppose I'm notifying slack"
