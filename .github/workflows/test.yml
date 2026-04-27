@@ -6,9 +6,19 @@ on:
   workflow_dispatch:
 
 jobs:
+  check_duplicate:
+    runs-on: ubuntu-latest    # Map a step output to a job output
+    outputs:
+      # `should_skip` is output from `fkirc/skip-duplicate-actions@v5`
+      is_duplicate: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@v5
+
   test:
     runs-on: ubuntu-latest
-    # if: ${{ github.event_name == 'workflow_dispatch' }}
+    needs: check_duplicate
+    if: needs.check_duplicate.outputs.is_duplicate != 'true'
     steps:
       - run: echo hello
 
